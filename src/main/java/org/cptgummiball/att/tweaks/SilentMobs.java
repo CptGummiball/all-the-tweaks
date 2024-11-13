@@ -6,21 +6,28 @@ import org.bukkit.entity.Monster;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
+import org.bukkit.configuration.file.FileConfiguration;
+
 import java.util.Collection;
 
-public class SilentMobs implements Listener{
+public class SilentMobs implements Listener {
 
-    private int MOB_THRESHOLD = 10; // Number of mobs before silencing them
-    private int RADIUS = 5; // Radius to check for nearby mobs
+    private final int mobThreshold;
+    private final int radius;
+
+    public SilentMobs(FileConfiguration config) {
+        this.mobThreshold = config.getInt("SilentMobs.MobThreshold", 10);
+        this.radius = config.getInt("SilentMobs.Radius", 5);
+    }
 
     @EventHandler
     public void onCreatureSpawn(CreatureSpawnEvent event) {
         if (event.getEntity() instanceof Monster) {
             Collection<Entity> nearbyEntities = event.getLocation().getWorld().getNearbyEntities(
-                    event.getLocation(), RADIUS, RADIUS, RADIUS, entity -> entity instanceof Monster);
+                    event.getLocation(), radius, radius, radius, entity -> entity instanceof Monster);
 
-            if (nearbyEntities.size() > MOB_THRESHOLD) {
-                ((LivingEntity) event.getEntity()).setSilent(true);
+            if (nearbyEntities.size() > mobThreshold) {
+                event.getEntity().setSilent(true);
             }
         }
     }

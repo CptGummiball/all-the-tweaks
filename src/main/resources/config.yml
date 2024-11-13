@@ -1,10 +1,24 @@
 # Plugins Language
-language: en-US
+language: en-US  # The language used by the plugin (currently English)
+
 # Tweaks
-AntiCropTrample: false
-GlassDrop: false
-SilentMobs: false
-ClickHarvest: false
+AntiCropTrample: false  # Whether the AntiCropTrample feature is enabled (prevents crops from being trampled by players or mobs)
+GlassDrop: false  # Whether the GlassDrop feature is enabled (allows glass blocks to drop as items when broken)
+SilentMobs:
+  enabled: false  # Enables or disables the SilentMobs feature
+  MobThreshold: 10  # Number of mobs in proximity before they are silenced (lower the number to silence mobs more often)
+  Radius: 5  # The radius to check for nearby mobs to apply the silencing effect
+ClickHarvest: false  # Whether the ClickHarvest feature is enabled (allows crops to be harvested by clicking them)
+
+# MoreMobHeads
+MoreMobHeads:
+  enabled: false  # Enables or disables the MoreMobHeads feature (mobs can drop their heads when killed)
+  DropChance: 5.0  # The chance (in percentage) for a mob to drop its head when killed
+
+# PlayerHeadDrops
+PlayerHeadDrops:
+  enabled: false  # Enables or disables the PlayerHeadDrops feature (players can drop heads when killed by mobs or players)
+  DropChance: 5.0  # The chance (in percentage) for a player to drop their head when killed by mobs or players
 
 # Config-Version
-version: 1
+version: 1  # The version of the configuration file, used for future updates to ensure compatibility

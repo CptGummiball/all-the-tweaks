@@ -1,6 +1,6 @@
 # ATT - All the Tweaks
 
-**ATT - All the Tweaks** is a powerful Spigot and PaperMC plugin that adds a variety of useful tweaks and enhancements to your Minecraft server. Based on the popular **Vanilla Tweaks**, this plugin goes beyond by providing additional customization options to enrich your gameplay experience. **Some Features from Vanilla Tweaks will not be added because you can add them by yourself with the build-in Gamerule commands of Minecraft**
+**ATT - All the Tweaks** is a powerful Spigot and PaperMC plugin that adds a variety of useful tweaks and enhancements to your Minecraft server. Based on the popular **Vanilla Tweaks**, this plugin goes beyond by providing additional customization options to enrich your gameplay experience.
 
 ## Features
 
@@ -23,25 +23,43 @@ The plugin comes with a configuration file where you can enable or disable speci
 
 Below is a list of all the available tweaks that **ATT - All the Tweaks** offers.
 
-### Tweak 1: ClickHarvest
+### ClickHarvest
 
 - **Description**: Harvests fully grown crops with a single click and automatically replants them.
 - **Config Option**: ClickHarvest (default: false)
 
-### Tweak 2: CropTrample
+### CropTrample
 
 - **Description**: Prevents crops from being trampled by players and mobs.
 - **Config Option**: CropTrample (default: false)
 
-### Tweak 3: GlassDrop
+### GlassDrop
 
 - **Description**: Prevents glass from breaking on destruction, allowing it to drop as an item instead.
 - **Config Option**: GlassDrop (default: false)
 
-### Tweak 4: Silent Mobs
+### Silent Mobs
 
-- **Description**: Silences large groups of mobs (e.g., in mob farms) to reduce noise pollution.
-- **Config Option**: SilentMobs (default: false)
+- **Description**: Silences large groups of mobs (e.g., in mob farms) to reduce noise pollution. When there are more mobs than a specified threshold within a set radius, those mobs will become silent.
+- **Config Options**:
+    - `SilentMobs.enabled` (default: false): Enables or disables the feature that silences mobs in high-density areas.
+    - `SilentMobs.MobThreshold` (default: 10): The number of mobs in proximity before they are silenced. Lower values will silence mobs more often.
+    - `SilentMobs.Radius` (default: 5): The radius around the mob spawn point to check for nearby mobs to silence. Higher values will check a larger area.
+
+### More Mob Heads
+
+- **Description**: Allows mobs to drop their heads when killed. The chance of a mob dropping its head can be customized in the config.
+- **Config Options**:
+    - `MoreMobHeads.enabled` (default: false): Enables or disables the feature that allows mobs to drop their heads when killed.
+    - `MoreMobHeads.DropChance` (default: 5.0): The chance (in percentage) for a mob to drop its head when killed.
+
+### Player Head Drops
+
+- **Description**: Allows players to drop their heads when killed by mobs or other players. The chance of a player dropping their head can be customized in the config.
+- **Config Options**:
+    - `PlayerHeadDrops.enabled` (default: false): Enables or disables the feature that allows players to drop their heads when killed.
+    - `PlayerHeadDrops.DropChance` (default: 5.0): The chance (in percentage) for a player to drop their head when killed by mobs or other players.
+
 
 ### More Tweaks Coming Soon
 
