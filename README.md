@@ -106,6 +106,7 @@ This plugin is licensed under the MIT License. See the [LICENSE](LICENSE) file f
 
 - Inspired by **Vanilla Tweaks**.
 - Thanks to the Spigot and PaperMC communities for their contributions.
+- HopperFilter Idea by [@wolf128058](https://github.com/wolf128058)
 
 ---
 
