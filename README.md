@@ -10,7 +10,7 @@
 
 ## Installation
 
-1. Download the latest release of **ATT - All the Tweaks** from the [releases section](#).
+1. Download the latest release of **ATT - All the Tweaks** from the [releases section](https://github.com/CptGummiball/all-the-tweaks/releases).
 2. Place the `.jar` file into the `plugins` folder of your Spigot or PaperMC server.
 3. Restart your server.
 4. Configure the plugin settings in the `plugins/ATT` folder if needed.
@@ -21,19 +21,32 @@ The plugin comes with a configuration file where you can enable or disable speci
 
 ## Tweak List
 
-Below is a list of all the available tweaks that **ATT - All the Tweaks** offers. (Placeholder section – please replace with actual tweak list and explanations.)
+Below is a list of all the available tweaks that **ATT - All the Tweaks** offers.
 
-### Tweak 1: [Tweak Name]
+### Tweak 1: ClickHarvest
 
-- **Description**: Explain what this tweak does.
-- **Config Option**: Name of the config option (default: true/false).
+- **Description**: Harvests fully grown crops with a single click and automatically replants them.
+- **Config Option**: ClickHarvest (default: false)
 
-### Tweak 2: [Tweak Name]
+### Tweak 2: CropTrample
 
-- **Description**: Explain what this tweak does.
-- **Config Option**: Name of the config option (default: true/false).
+- **Description**: Prevents crops from being trampled by players and mobs.
+- **Config Option**: CropTrample (default: false)
 
-<!-- Continue adding tweaks here -->
+### Tweak 3: GlassDrop
+
+- **Description**: Prevents glass from breaking on destruction, allowing it to drop as an item instead.
+- **Config Option**: GlassDrop (default: false)
+
+### Tweak 4: Silent Mobs
+
+- **Description**: Silences large groups of mobs (e.g., in mob farms) to reduce noise pollution.
+- **Config Option**: SilentMobs (default: false)
+
+### More Tweaks Coming Soon
+
+Additional tweaks will be added before the official release to enhance functionality and customization.
+
 
 ## Commands
 
@@ -56,7 +69,7 @@ Below is a list of all the available tweaks that **ATT - All the Tweaks** offers
 
 ## Support
 
-If you have any issues or questions, feel free to open an issue on the [GitHub repository](ISSUES) or contact me directly.
+If you have any issues or questions, feel free to open an issue on the [GitHub repository](https://github.com/CptGummiball/all-the-tweaks/issues).
 
 ## License
 

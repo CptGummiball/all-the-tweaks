@@ -1,0 +1,10 @@
+# Plugins Language
+language: en-US
+# Tweaks
+AntiCropTrample: false
+GlassDrop: false
+SilentMobs: false
+ClickHarvest: false
+
+# Config-Version
+version: 1

@@ -1,0 +1,6 @@
+name: AllTheTweaks
+version: '1.0'
+main: org.cptgummiball.att.Main
+api-version: '1.21'
+prefix: ATT
+authors: [ cptgummiball ]
