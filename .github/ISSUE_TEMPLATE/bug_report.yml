@@ -11,7 +11,7 @@ body:
     value: |
       Thanks for taking the time to fill out this bug!
 - type: dropdown
-  id: typebug
+  id: bugtype
   attributes:
     label: Type of Bug
     options:
@@ -48,7 +48,7 @@ body:
   validations:
     required: true
 - type: input
-  id: mclo.gs
+  id: mclogs
   attributes:
     label: mclo.gs Link
     description: "Please copy your console log to [mclo.gs](https://mclo.gs) and enter your link here"
