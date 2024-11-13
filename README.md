@@ -1,6 +1,6 @@
 # ATT - All the Tweaks
 
-**ATT - All the Tweaks** is a powerful Spigot and PaperMC plugin that adds a variety of useful tweaks and enhancements to your Minecraft server. Based on the popular **Vanilla Tweaks**, this plugin goes beyond by providing additional customization options to enrich your gameplay experience.
+**ATT - All the Tweaks** is a powerful Spigot and PaperMC plugin that adds a variety of useful tweaks and enhancements to your Minecraft server. Based on the popular **Vanilla Tweaks**, this plugin goes beyond by providing additional customization options to enrich your gameplay experience. **Some Features from Vanilla Tweaks will not be added because you can add them by yourself with the build-in Gamerule commands of Minecraft**
 
 ## Features
 
