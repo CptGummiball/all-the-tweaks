@@ -1,14 +1,17 @@
 # Plugins Language
 language: en-US  # The language used by the plugin (currently English)
 
-# Tweaks
+# Simple Tweaks
 AntiCropTrample: false  # Whether the AntiCropTrample feature is enabled (prevents crops from being trampled by players or mobs)
+ClickHarvest: false  # Whether the ClickHarvest feature is enabled (allows crops to be harvested by clicking them)
 GlassDrop: false  # Whether the GlassDrop feature is enabled (allows glass blocks to drop as items when broken)
+HopperFilter: false # Whether the Hopper Filter feature is enabled (Allows Filtering Items with Hopper by adding a ItemFrame)
+
+# SilentMobs
 SilentMobs:
   enabled: false  # Enables or disables the SilentMobs feature
   MobThreshold: 10  # Number of mobs in proximity before they are silenced (lower the number to silence mobs more often)
   Radius: 5  # The radius to check for nearby mobs to apply the silencing effect
-ClickHarvest: false  # Whether the ClickHarvest feature is enabled (allows crops to be harvested by clicking them)
 
 # MoreMobHeads
 MoreMobHeads:

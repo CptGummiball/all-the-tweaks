@@ -66,5 +66,13 @@ public class init {
         } else {
             plugin.getLogger().info("PlayerHeadDrops feature is disabled in the config.");
         }
+
+        // register HopperFilter Listener
+        if (config.getBoolean("HopperFilter", false)) {
+            pluginManager.registerEvents(new HopperFilter(), plugin);
+            plugin.getLogger().info("HopperFilter enabled!");
+        } else {
+            plugin.getLogger().info("HopperFilter feature is disabled in the config.");
+        }
     }
 }

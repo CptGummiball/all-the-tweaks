@@ -26,17 +26,20 @@ Below is a list of all the available tweaks that **ATT - All the Tweaks** offers
 ### ClickHarvest
 
 - **Description**: Harvests fully grown crops with a single click and automatically replants them.
-- **Config Option**: ClickHarvest (default: false)
+- **Config Options**:
+    - `ClickHarvest` (default: false)
 
 ### CropTrample
 
 - **Description**: Prevents crops from being trampled by players and mobs.
-- **Config Option**: CropTrample (default: false)
+- **Config Options**:
+    - `CropTrample` (default: false)
 
 ### GlassDrop
 
 - **Description**: Prevents glass from breaking on destruction, allowing it to drop as an item instead.
-- **Config Option**: GlassDrop (default: false)
+- **Config Options**:
+    - `GlassDrop` (default: false)
 
 ### Silent Mobs
 
@@ -59,6 +62,12 @@ Below is a list of all the available tweaks that **ATT - All the Tweaks** offers
 - **Config Options**:
     - `PlayerHeadDrops.enabled` (default: false): Enables or disables the feature that allows players to drop their heads when killed.
     - `PlayerHeadDrops.DropChance` (default: 5.0): The chance (in percentage) for a player to drop their head when killed by mobs or other players.
+
+### Hopper Filter
+
+- **Description**: This tweak ensures that only items matching the item in an attached Item Frame or Glow Item Frame can pass through the hopper. If an item in the hopper does not match, the transfer is canceled. Multiple Item Frames can be used to filter items.
+- **Config Options**:
+  - `HopperFilter` (default: false): Enables or disables the Hopper Filter feature.
 
 
 ### More Tweaks Coming Soon
